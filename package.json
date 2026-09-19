@@ -1,0 +1,18 @@
+{
+  "name": "magic-image-skill",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Create real RGBA mirage-tank PNG images that reveal different content on light and dark backgrounds.",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test",
+    "demo": "node scripts/create-demo.mjs",
+    "inspect": "node scripts/magic-image.mjs inspect --image output/demo/calm-to-storm.png"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LucianaiB2004/magic-image-skill.git"
+  },
+  "dependencies": { "sharp": "^0.35.4" }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "魔术图片 Skill"
+  short_description: "制作浅色与深色背景呈现不同内容的真实透明 PNG"
+  default_prompt: "使用 $magic-image 根据我的构图制作并验证一张魔术图片。"

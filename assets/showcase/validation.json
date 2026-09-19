@@ -1,0 +1,34 @@
+{
+  "mode": "layers",
+  "width": 1254,
+  "height": 1254,
+  "format": "png",
+  "hasAlpha": true,
+  "alpha": {
+    "levels": 256,
+    "min": 0,
+    "max": 255,
+    "fullyTransparent": 30668,
+    "fullyOpaque": 77369,
+    "semiTransparent": 1464479,
+    "usableTransparency": true
+  },
+  "whiteAppearanceError": {
+    "meanAbsoluteError": 0.00000720713387547938,
+    "maxAbsoluteError": 1
+  },
+  "blackAppearanceError": null,
+  "numericPass": true,
+  "visualReviewRequired": true,
+  "warnings": [],
+  "processing": {
+    "algorithm": "layers-v1",
+    "blackPoint": 10,
+    "hiddenGain": 0.9,
+    "foregroundSolidAt": 32,
+    "gray": 80,
+    "fitSecondary": false,
+    "foregroundOpacitySource": "estimated-ink"
+  },
+  "sha256": "4883ad166fed557a43568eda59aacbad728a716699b8bf7de778aba9f3b8717f"
+}
