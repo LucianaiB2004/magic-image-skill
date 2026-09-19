@@ -32,10 +32,9 @@
 - 不要发送 `comparison.png`、`preview-white.png` 或 `preview-black.png`；它们只是检查效果的普通预览图。
 - 发布后先用实际手机和当前 App 版本点开检查。平台更新、深色模式和图片压缩策略都可能改变最终显示。
 
-### 当前适合展示的平台
+### 可以在哪里展示
 
-- **小红书**：使用网页端上传最终 PNG。当前仓库的[真实发布案例](https://www.xiaohongshu.com/explore/6aae7dc6000000002b011bf8?xsec_token=ABZHo-UMRidzHT27RSYTntovWGXQowiwIoNZQkWFAJ9rs=&xsec_source=pc_user)已经完成实际验证。
-- **QQ**：发送原始 PNG，并选择原图或高清。聊天区域的浅色背景与点开图片后的深色查看器可以形成两种画面（[参考说明](https://www.shenyantupian.cn/pages/tutorials/articles/phantom-tank-tutorial.html)）；不同主题和版本仍建议先发给自己测试。
+- **小红书、抖音等内容平台**：上传最终 PNG，并尽量选择原图或高清。当前仓库提供了[小红书真实案例](https://www.xiaohongshu.com/explore/6aae7dc6000000002b011bf8?xsec_token=ABZHo-UMRidzHT27RSYTntovWGXQowiwIoNZQkWFAJ9rs=&xsec_source=pc_user)；其他平台请在发布后使用实际客户端点开检查。
 - **自己的网页或作品页**：直接使用生成的 `preview.html`。它始终加载同一张 PNG，点击时只切换背景颜色，是最稳定、最可控的展示方式。
 
 只有同时满足“保留 PNG Alpha”以及“缩略图和大图使用不同底色”的平台，才能直接呈现这种效果。能上传 PNG，不等于一定会保留透明通道。
