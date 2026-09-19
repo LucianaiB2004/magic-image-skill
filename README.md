@@ -22,6 +22,24 @@
 
 小红书等平台可能压缩图片、改变预览背景或调整透明度处理，因此实际显隐效果取决于当前客户端；仓库内的 `preview.html` 是确定性的本地验证方式。
 
+## 怎么发送给别人看
+
+请发送工具生成的 `<name>.png`，也就是**真正带 Alpha 通道的 RGBA PNG 成品**。
+
+- 选择“原图”或“高清”发送，避免平台压缩后转成 JPG。
+- 不要发送截图；截图已经把透明图片和背景压成了一层。
+- 不要把文件另存为 JPG、JPEG 或 HEIC，这些格式无法保留本效果需要的 Alpha。
+- 不要发送 `comparison.png`、`preview-white.png` 或 `preview-black.png`；它们只是检查效果的普通预览图。
+- 发布后先用实际手机和当前 App 版本点开检查。平台更新、深色模式和图片压缩策略都可能改变最终显示。
+
+### 当前适合展示的平台
+
+- **小红书**：使用网页端上传最终 PNG。当前仓库的[真实发布案例](https://www.xiaohongshu.com/explore/6aae7dc6000000002b011bf8?xsec_token=ABZHo-UMRidzHT27RSYTntovWGXQowiwIoNZQkWFAJ9rs=&xsec_source=pc_user)已经完成实际验证。
+- **QQ**：发送原始 PNG，并选择原图或高清。聊天区域的浅色背景与点开图片后的深色查看器可以形成两种画面（[参考说明](https://www.shenyantupian.cn/pages/tutorials/articles/phantom-tank-tutorial.html)）；不同主题和版本仍建议先发给自己测试。
+- **自己的网页或作品页**：直接使用生成的 `preview.html`。它始终加载同一张 PNG，点击时只切换背景颜色，是最稳定、最可控的展示方式。
+
+只有同时满足“保留 PNG Alpha”以及“缩略图和大图使用不同底色”的平台，才能直接呈现这种效果。能上传 PNG，不等于一定会保留透明通道。
+
 ## 原理
 
 小时候觉得它像魔法，理解 Alpha 合成以后，原理其实并不复杂：像素显示值为 `RGB × Alpha + Background × (1 - Alpha)`。
